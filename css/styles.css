@@ -1,0 +1,36 @@
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+  font-family: arial;
+  font-size: 333%;
+}
+p {
+  color: red;
+  font-family: arial;
+  font-size: 151%;
+}
+a:link {
+  color: darkgreen;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: magenta;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkred;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: darkyellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
