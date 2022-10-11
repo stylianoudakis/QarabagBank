@@ -1,48 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <title>Qarabağ Bankı – Lista de Prospecção</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <meta charset="UTF-8">
+    <meta name="description" content="Qarabağ Bankı – Formulário de Contato">
+    <meta name="keywords" content="Formulário, Contato, Qarabağ, Karabakh, Azerbaijan, Azərbaycan, Bankı">
+    <meta name="author" content="Jean Stylianoudakis">
+    <meta http-equiv="refresh" content="1500">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<form action="" method="post">
-    <div>
-        <label for="nome">Nome</label><br>
-        <input type="text" id="nome" name="usuario_nome" />
-    </div><br>
-    <div>
-        <label for="nome">Sobrenome</label><br>
-        <input type="text" id="nome" name="usuario_nome" />
-    </div><br>
-    <div>
-        <label for="nome">Cidade</label><br>
-        <input type="text" id="nome" name="usuario_nome" />
-    </div><br>
-    <div>
-        <label for="nome">Província</label><br>
-        <input type="text" id="nome" name="usuario_nome" />
-    </div><br>
-    <div>
-        <label for="nome">Idade</label><br>
-        <input type="text" id="nome" name="usuario_nome" />
-    </div><br>
-    <div>
-        <label for="nome">Ano de Partida</label><br>
-        <input type="text" id="nome" name="usuario_nome" />
-    </div><br>
-    <div>
-        <label for="email">E-mail</label><br>
-        <input type="email" id="email" name="usuario_email" />
-    </div><br>
-    <div>
-        <label for="msg">Mensagem</label><br>
-        <textarea id="msg" name="usuario_msg"></textarea>
-    </div><br>
-    <div class="button">
-    <button type="submit">Enviar sua mensagem</button>
-    </div><br>
-</form>
+
+<body>
+
+<header>
+
+    <h1>Formulário de Contato</h1>
+
+</header>
+
+<section>
+    
+    <article>
+        
+        <form action="" method="post" title="Formulário de Contato">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <div><br>
+                    <label for="nome">Nome e Sobrenome</label><br>
+                    <input type="text" id="nome" name="cidadaoNome" />
+                </div><br>
+                <div>
+                    <label for="idade">Idade</label><br>
+                    <input type="number" id="idade" name="cidadaoIdade" />
+                </div><br>
+                <div>
+                    <label for="nome">Cidadania</label><br><br>
+                    <input type="radio" id="refugiado" name="cidadania" value="Refugiado">
+                    <label for="refugiado">Refugiado Azeri</label><br>
+                    <input type="radio" id="cidadao" name="cidadania" value="Cidadão">
+                    <label for="cidadao">Cidadão Azeri</label><br>
+                    <input type="radio" id="militar" name="cidadania" value="Militar">
+                    <label for="militar">Militar</label><br>
+                    <input type="radio" id="estrangeiro" name="cidadania" value="Estrangeiro">
+                    <label for="estrangeiro">Estrangeiro</label><br>
+                </div><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Referências de Vínculo com Qarabağ</legend>
+                    <div><br>
+                        <label for="provincias">Província de Residência Atual</label><br>
+                        <select id="provincias" name="provincias" size="5">
+                          <option value="volvo">Bakı</option>
+                          <option value="saab">Gəncə</option>
+                          <option value="fiat">Naxçıvan</option>
+                          <option value="audi">Xankəndi</option>
+                          <option value="saab">Lənkəran</option>
+                          <option value="fiat">Mingəçevir</option>
+                          <option value="audi">Naftalan</option>
+                          <option value="volvo">Sumqayıt</option>
+                          <option value="saab">Şəki</option>
+                          <option value="fiat">Şirvan</option>
+                          <option value="audi">Yevlax</option>
+                        </select>
+                    </div><br>
+                    <div>
+                        <label for="presente">Está em Qarabağ?</label>
+                        <input type="checkbox" id="presente" name="presenteQarabağ" value="presente">
+                    </div><br>
+                    <div>
+                        <label for="cidade">Cidade ou Vila de Origem</label><br>
+                        <input type="text" id="cidade" name="cidadaoCidade" />
+                    </div><br>
+                    <div>
+                        <label for="anoPartida">Ano de Partida</label><br>
+                        <input type="number" id="anoPartida" name="cidadaoAnoPartida" />
+                    </div><br>
+            </fieldset><br>
+            <fieldset>
+                <legend>Dados para Contato</legend>
+                    <div>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="cidadaoEmail" />
+                    </div><br>
+                    <div>
+                        <label for="msg">Mensagem</label><br>
+                        <textarea id="msg" name="cidadaoMensagem" rows="4" cols="30">Insira aqui seu pedido.</textarea>
+                    </div><br>
+            </fieldset><br>
+
+            
+            
+            <button type="button" onclick="conferir()">ENVIAR</button>
+
+            </div><br>
+        
+        </form>
+
+        <script src="js/code.js"></script>
+
+        <br>
+
+        <img class="resize" src="images/qarabag-azerbaycandir-flag.jpg" alt="Qarabağ é Azerbaijão!" title="Qarabağ é azeri!">
+
+    </article>
+
+</section>
+
 </html>
 
