@@ -1,9 +1,18 @@
 Projeto 02
-Em duplas.
-Escolha livre do tema.
-Deve ser desenvolvido um site, utilizando HTML, CSS, JavaScript e React.
-Em breve informações detalhadas
+Em duplas ou individual (Mudando a orientação inicial, os alunos poderão dar continuidade ao trabalho de forma individual, se assim quiserem. OBS.: ao optarem pela realização individual, os alunos não terão oportunidade de exercitar o uso do Git e GitHub em equipes)
+Tema: mesmo tema do primeiro projeto.
+Deve ser desenvolvido um site, utilizando HTML, CSS, JavaScript (servidor) e React.
+Utilizem novos conceitos de acessibilidade, considerando o o site https://emag.governoeletronico.gov.br/  
+O formulário mais completo apresentado no Projeto 1 deverá se conectar ao banco de dados a escolha da equipe.
+Em aula, foram utilizados os módulos nodemon, express, mysql2, handlebars, sequelize e body-parser. Caso queiram utilizar outros, fiquem a vontade, mas durante a apresentação os módulos devem ser apresentados. 
+//npm install -g nodemon
+//npm install --save express
+//npm install --save sequelize
+//npm install --save mysql2
+//npm install --save express-handlebars
+//npm install --save body-parser
+ 
 Data da apresentação do trabalho: 29/11 (apresentação será remota, com duração de 15 minutos (pode ser alterado a partir da quantidade de apresentações), via teams, com ínicio as 19h15) (1,0 ponto).
 Data da entrega do trabalho: 02/12 (entrega deverá ser realizada no AVA - Fórum)
     - arquivo zip 
-OBS.: Os alunos que possuem conhecimento prévio sobre o conteúdo da disciplina e optaram apenas por realizar as avaliações, terão maior tempo para realizar sua apresentação (20 a 30 minutos), pois deverão, além de apresentar o trabalho, apresentar os recursos utilziados, tais como novas ferramentas, frameworks... Estes alunos devem informar no fórum da entrega, a descrição do que foi utilizado. 
+OBS.: Os alunos que possuem conhecimento prévio sobre o conteúdo da disciplina e optaram apenas por realizar as avaliações, terão maior tempo para realizar sua apresentação (20 a 30 minutos), pois deverão, além de apresentar o trabalho, apresentar os recursos utilizados, tais como novas ferramentas, frameworks... Estes alunos devem informar no fórum da entrega, a descrição do que foi utilizado. 
