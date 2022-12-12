@@ -7,9 +7,14 @@ const contato = require("./Contato")
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
 
-app.post('/contato', function(req,res){
-    res.send(req.body.nome + "<br>" + req.body.idade);
+app.get('/contato', function(req,res){
+    res.send("Formulário de Contato");
 });
+
+app.post('/contato', function(req,res){
+    res.send("nome: "+ req.body.nome + "<br>" + "idade"+ req.body.idade);
+});
+/*
 
 app.post('/contato'), function(req, res){
     contato.create({
@@ -28,5 +33,5 @@ app.post('/contato'), function(req, res){
           res.send("Não foi possível enviar seus dados!" + erro)
       })
   }
-
+*/
   app.listen(8080);
