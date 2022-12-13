@@ -34,6 +34,7 @@ function conferir() {
         alert("Insira um ano entre 1988 e 1994!");
         anoPartida.focus();
         return;
+        
     }
     else if (anoPartida.value > 1994) {
         alert("Insira um ano entre 1988 e 1994!");

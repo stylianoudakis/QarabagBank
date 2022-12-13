@@ -1,33 +1,35 @@
 const db = require('./db')
 
 const Contato = db.sequelize.define('contato',{
-    nome: {
+    cidadaoNome: {
         type: db.Sequelize.STRING
     },
-    idade: {
+    cidadaoIdade: {
         type: db.Sequelize.INTEGER
     },
     cidadania: {
         type: db.Sequelize.STRING
     },
-    provincia: {
+    provincias: {
         type: db.Sequelize.STRING
     },
-    presente: {
-        type: db.Sequelize.TINYINT
+    presenteQarabag: {
+        type: db.Sequelize.BOOLEAN
     },
-    origem: {
+    cidadaoCidade: {
         type: db.Sequelize.STRING
     },
-    ano: {
+    cidadaoAnoPartida: {
         type: db.Sequelize.INTEGER
     },
-    email: {
+    cidadaoEmail: {
         type: db.Sequelize.STRING
     },
-    mensagem: {
+    cidadaoMensagem: {
         type: db.Sequelize.STRING
     }
 })
+
+//Contato.sync({force: true})
 
 module.exports = Contato;
