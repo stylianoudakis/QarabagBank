@@ -23,16 +23,18 @@ app.get('/', function(req,res){
     res.sendFile(__dirname + "/index.htm");
 });
 
-app.get('/contato', function(req,res){
-    res.send("Formulário de Contato");
-});
-
 app.get('/sobre', function(req,res){
     res.render('sobre');
 });
 
 app.get('/inicio', function(req,res){
     res.render('inicio');
+});
+
+app.get('/dados', function(req, res){  
+    const banco = require('./js/query');
+    const dados =  banco.todosContatos();
+    res.send('Dados enviados ao console.')
 });
 
 //Formulário para banco de dados
@@ -54,13 +56,6 @@ app.post('/contato', function(req,res){
             res.send("Não foi possível enviar seus dados!<br>" + erro)
         })
 });
-
-const dados = (async () => {
-	const banco = require ('./banco');
-	console.log('Obter todos os contatos via formulário.');
-	const dados = await banco.todosContatos();
-	console.log(dados)
-})
 
 //Servidor
 app.listen(8080, function(){

@@ -1,17 +1,24 @@
-const conectar = async () => {
-	if(global.conexao && global.conexao.state != 'disconnected')
-		return global.conexao
-	const mysql = require('mysql2/promise')		
-	const con  = mysql.createConnection("mysql://stlndks:6405@localhost:3306/qarabag")
-	console.log('Conectado ao banco!')
-	global.conexao = con
-	return conexao
-}
+const mysql = require('mysql2')
+
+const con  = mysql.createConnection({
+    host: "localhost",
+    user: "root",
+    password: "6405",
+    database: "qarabag"
+})
 
 const todosContatos = async() => {
-	const con = await conectar()
-	const [linhas] = await con.query('SELECT * FROM contatos')
-	return await linhas
+    con.connect(function (err) {
+        if(err) throw err;
+        console.log("Conectado!");
+        var sql = "SELECT * FROM contatos";
+        con.query(sql, (err, result) => {
+            con.end();
+            if(err) throw err;
+            console.log(JSON.parse(JSON.stringify(result)))
+            //console.log(result)
+        });
+    })
 }
 
 module.exports = {todosContatos}
